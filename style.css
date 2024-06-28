@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+}
+
+.weather-app {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-box button {
+    width: 15%;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+}
+
+.search-box button i {
+    font-size: 18px;
+}
+
+.weather-info {
+    display: none;
+    margin-top: 20px;
+}
+
+.weather-info.active {
+    display: block;
+}
+
+.weather-info h2 {
+    margin-bottom: 10px;
+}
+
+.weather-info .temp {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.weather-info .description {
+    margin-bottom: 10px;
+}
+
+.weather-info .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-info .details div {
+    text-align: left;
+}
+@media (max-width: 600px) {
+    .weather-app {
+        padding: 10px;
+    }
+
+    .search-box input {
+        width: 70%;
+    }
+
+    .search-box button {
+        width: 25%;
+    }
+
+    .weather-info .details {
+        flex-direction: column;
+    }
+}
+
+
+.suggestions {
+    position: absolute;
+    background: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    top: 54%;
+    z-index: 10;
+    display: none;
+    
+   
+}
+
+.suggestions.active {
+    display: block;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background-color: #f0f0f0;
+}

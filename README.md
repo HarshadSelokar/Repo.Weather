@@ -49,13 +49,13 @@ Right Click on index.html > Open with Live Server
 
 ### 3. Add Your API Keys
 
-Replace the placeholder API key in your JavaScript file:
+Replace the placeholder API key in your JavaScript file: (Note: generate your API keys from OpenWeatherMap Website)
 
 ```js
 const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
 ```
 
-If you're using GeoDB Cities API for autocomplete, set that API key as well:
+If you're using GeoDB Cities API for autocomplete, set that API key as well: (Note: generate your API keys from  GeoDB Cities Website)
 
 ```js
 const geoDbApiKey = 'YOUR_GEODB_API_KEY';
@@ -108,7 +108,7 @@ Feel free to fork the project and submit pull requests if you want to improve th
 For feedback, suggestions, or collaboration:
 
 **Harshad Selokar**  
-📧 harshadselokar@example.com (replace with your real contact)  
+📧 [Mail](anujselokar7@gmail.com) 
 🔗 [Portfolio](https://harshadselokar.github.io/Portfolio-/)
 
 ---
